@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Oh, Bugger!</title>
+    <link rel="stylesheet" href="css/style.css">
+   <script type='text/javascript'>
+    WebFontConfig = {
+      google: { families: [ 'Gloria Hallelujah', 'Graduate', 'Rye'] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  <!-- Fallback if Javascript is turned off. -->
+  <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  </noscript>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.2/howler.min.js'></script>
+</head>
+<body>
+ <div class='preloader'></div>
+
+  <!-- Prevents background from moving when game state changes. -->
+  <div class='h1-wrap'>
+    <h1 id="myTitle">Oh, Bugger!</h1>
+  </div>
+   
+    <div class='main-text'>
+    <div class='level-and-lives-wrap'>
+      <div class='flex-item'>
+        <span>Level: </span>
+        <span class='level'>1</span>
+      </div>
+      <div class='flex-item'>
+        <span>Lives: </span>
+        <span class='lives'>3</span>
+      </div>
+    </div>
+      <div class='score-wrap'>
+        <span>Score: </span>
+        <span class='score'>0</span>
+      </div>
+      <p class='you-win'>You completed the game!<br>Congratulations!</p>
+      <p class='try-again'>Hard luck!</p>
+  </div>
+   <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    <script type='text/javascript'></script>
+  <script>
+    
+    window.onload = function() {
+      setTimeout(function() {
+        var preload = document.querySelector('.preloader');
+        preload.style.opacity = 1;
+        // soundEffects('music').play();
+        (function fadeIn() {
+          if ((preload.style.opacity -= 0.05) < 0) {
+            preload.style.display = 'none';
+          } else {
+            requestAnimationFrame(fadeIn);
+          }
+        })();
+      }, 800);
+    };
+  </script>
+</body>
+</html>

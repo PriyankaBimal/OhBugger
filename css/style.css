@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    background-image: url("../images/background.jpg");
+}
+
+/*.h1-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center !important;
+}
+*/
+#myTitle
+{
+  text-align: center !important;
+  margin-top: -10px;
+  font-family: 'Gloria Hallelujah', cursive;
+   padding: 0px;
+}
+
+.canvas {
+  max-width: 100%;
+  margin-top: 0px;
+}
+
+.level-and-lives-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 29.84px;
+  font-size: 1.865rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: -.9em auto;
+  max-width: 60%;
+  -webkit-text-stroke-width: .03em;
+
+}
+
+.score-wrap {
+  font-size: 29.84px;
+  font-size: 1.865rem;
+  margin-top: 0px;
+  -webkit-text-stroke-width: .03em;
+}
+
+.you-win {
+  display: none;
+  font-size: 23.2px;
+  font-size: 1.45rem;
+  line-height: 1.5em;
+  margin: -.475em auto .85em;
+  -webkit-text-stroke-width: .03em;
+}
+
+.try-again {
+  display: none;
+  font-size: 1.4em;
+  line-height: 1.55em;
+  margin-top: -.69em;
+  -webkit-text-stroke-width: .03em;
+}
+
+.main-text
+{
+  margin-top: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+.score-wrap
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+
+}
+
